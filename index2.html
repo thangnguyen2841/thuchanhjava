@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+<!--    Nhúng Java trưc tiếp-->
+    <button type="button" onclick="alert('Xin Chào');">Click Me!</button>
+</body>
+<!--        Nhúng Java qua thẻ <script>-->
+    <button type="button" onclick="showMessage();">Click Me!2</button>
+    <script>
+        function showMessage() {
+            alert('Xin Chào');
+        }
+    </script>
+<!--                    Nhúng Java qua file Java.js-->
+<button type="button" onclick="showMessage();">Click Me!3</button>
+<script src="index2.js">
+</script>
+</html>
